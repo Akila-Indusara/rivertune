@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4f42a2113e4f1448d89e5c606415c7, type: 3}
+  m_Name: Character_Cecily_Unknown
+  m_EditorClassIdentifier: 
+  character: {fileID: 1692417350393980133, guid: f2d5b0615bb20d14d8f076bcf47750f0, type: 3}
+  namePlate: {fileID: 21300000, guid: 947385cac58f28f41b2959047f9a11b7, type: 3}
+  characterParts:
+  - name: Mouth
+    sprites:
+    - {fileID: 21300000, guid: 78ead887c87b6174c89e6cbd636bd330, type: 3}
+    - {fileID: 21300000, guid: 3a8813971a9e36b49a14e73f25c4040a, type: 3}
+    - {fileID: 21300000, guid: 73e9a2e31a632a44bb3ba249bdc8ca94, type: 3}
+    - {fileID: 21300000, guid: 2398a8a36ae34844290ccc8405f1f09f, type: 3}
+    - {fileID: 21300000, guid: 687d9d30856023e49a90a7a4287467cf, type: 3}
+    - {fileID: 21300000, guid: 1554ffe77aafbff45a8af3df25970dd3, type: 3}
+    - {fileID: 21300000, guid: ad3f3b6ffd152864485a3eb770fb07a0, type: 3}
+    - {fileID: 21300000, guid: 3fa8949ac2783d94a924ab0fd5bffb4e, type: 3}
+    - {fileID: 21300000, guid: f1c6a8c64fddbbb4aa650d7cb8459d2a, type: 3}
+  - name: Eyes
+    sprites:
+    - {fileID: 21300000, guid: 9d320c7959ffa00458ee8cefc8fc91a7, type: 3}
+    - {fileID: 21300000, guid: 9e791054fc4dfa64cb615f1a2b739095, type: 3}
+    - {fileID: 21300000, guid: e3ae9238ba00b5a46a6611eead3a0403, type: 3}
+    - {fileID: 21300000, guid: 47b5a691398c11849a76264c5fa4eb49, type: 3}
+    - {fileID: 21300000, guid: ab56524b0a849f240b7c55178897944e, type: 3}
+  - name: EyeBrows
+    sprites:
+    - {fileID: 21300000, guid: 44e01627c5e58834787daf3298534ea2, type: 3}
+    - {fileID: 21300000, guid: f0b7bb7e9a4ccae41a6d2f76d85f0439, type: 3}
+    - {fileID: 21300000, guid: 84d40d010089d2e4a863b27871d56eec, type: 3}
+    - {fileID: 21300000, guid: 4ee8e93cfd2553c45a97792e50670a7d, type: 3}
+  - name: Blush
+    sprites:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 2c44a91ee54e5374cbcd7bbd438e159e, type: 3}
+  - name: Tears
+    sprites:
+    - {fileID: 0}
+    - {fileID: 21300000, guid: ca64d4d075665ea49ba53e8ff96d7b10, type: 3}
+    - {fileID: 21300000, guid: 2b1a6c1e9d5bcce498a5821127aa41a6, type: 3}
