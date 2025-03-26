@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1825607174}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.50671554
+  m_Size: 0.50512284
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1554,6 +1554,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 180d7fe3872fed84bb1132502be6b5b5, type: 2}
   - {fileID: 11400000, guid: 3bf384e66810031478dcc492c3514ecf, type: 2}
   - {fileID: 11400000, guid: 5b16ad54127a5e641a0d6c9558d58840, type: 2}
+  - {fileID: 11400000, guid: be5775e5ec29b884097c0bb1d68fa0ff, type: 2}
+  - {fileID: 11400000, guid: 745449954221c874aaaf5f712a2b6acd, type: 2}
+  - {fileID: 11400000, guid: 533b4120e4a39304083c581c4a43e4cd, type: 2}
+  - {fileID: 11400000, guid: ab9ee566038f21748a77fd021bd3854b, type: 2}
+  - {fileID: 11400000, guid: 5365241b23a9dd848b37e1eb746acfc1, type: 2}
+  - {fileID: 11400000, guid: a79eb12f1a09f2c49986a4764fe296a1, type: 2}
+  - {fileID: 11400000, guid: 81ce0645f29b86c46aa7f663c3113101, type: 2}
+  - {fileID: 11400000, guid: 982f21bb318d50a4597e5fa9212bfbc6, type: 2}
+  - {fileID: 11400000, guid: 1c90af78d5f2fa346825bfb3990fbaee, type: 2}
+  - {fileID: 11400000, guid: 6339e0722dac698449b3ee4bf7b8861b, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -48,28 +48,24 @@ public class DialogManager : MonoBehaviour
             namePlate.gameObject.SetActive(false);
         }
 
+        Color grayColor;
+        ColorUtility.TryParseHtmlString("#8F8F8F", out grayColor);
         // Set the character
         if (dialog.dialogType == DialogData.DialogType.Narrate)
         {
-            Color grayColor;
-            ColorUtility.TryParseHtmlString("#8F8F8F", out grayColor);
 
-            if (character_left.transform.childCount > 0 )
-            {
-                SetColor(character_left, grayColor);
-            }
-
-            if (character_right.transform.childCount > 0)
-            {
-                SetColor(character_right, grayColor);
-            }
+            SetColor(character_left, grayColor);
+            setDefaultEmotion(character_left);
+            SetColor(character_right, grayColor);
+            setDefaultEmotion(character_right);
 
         } else
         {
             // left character
             if (dialog.character_Position == DialogData.characterPosition.Left)
             {
-
+                SetColor(character_right, grayColor);
+                setDefaultEmotion(character_right);
                 setCharacter(dialog, character_left);
 
             }
@@ -77,7 +73,8 @@ public class DialogManager : MonoBehaviour
             // right character
             else if (dialog.character_Position == DialogData.characterPosition.Right)
             {
-
+                SetColor(character_left, grayColor);
+                setDefaultEmotion(character_left);
                 setCharacter(dialog, character_right);
 
             }
@@ -106,19 +103,34 @@ public class DialogManager : MonoBehaviour
 
     private void SetColor(GameObject character, Color color)
     {
-        Transform characterChild = character.transform.GetChild(0);
-        SpriteRenderer spriteRenderer = characterChild.GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null)
+        if (character.transform.childCount > 0)
         {
-            spriteRenderer.color = color;
-        }
-        foreach (Transform child in characterChild)
-        {
-            SpriteRenderer spriteRendererChild = child.GetComponent<SpriteRenderer>();
-
-            if (spriteRendererChild != null)
+            Transform characterChild = character.transform.GetChild(0);
+            SpriteRenderer spriteRenderer = characterChild.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
             {
-                spriteRendererChild.color = color;
+                spriteRenderer.color = color;
+            }
+            foreach (Transform child in characterChild)
+            {
+                SpriteRenderer spriteRendererChild = child.GetComponent<SpriteRenderer>();
+
+                if (spriteRendererChild != null)
+                {
+                    spriteRendererChild.color = color;
+                }
+            }
+        }
+    }
+
+    private void setDefaultEmotion(GameObject character)
+    {
+        if (character.transform.childCount > 0)
+        {
+            Transform characterChild = character.transform.GetChild(0);
+            foreach (Transform child in characterChild)
+            {
+                characterChild.GetComponent<CharacterScript>().setDefaultEmotions();
             }
         }
     }

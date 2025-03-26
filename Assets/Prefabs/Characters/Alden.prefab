@@ -92,6 +92,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.data[0].defaultSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a091f050338717d4e96ab9e9e4e8aa91, type: 3}
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.data[1].defaultSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e1ae7ddabfa2130429ffb7a97e1f6421, type: 3}
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.data[2].defaultSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e4f892885b41fd046b03c7de697f5e44, type: 3}
     - target: {fileID: 2183837667058937964, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
       propertyPath: m_Name
       value: Alden

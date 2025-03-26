@@ -14,5 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 4aafa744ae0bf60428bbfc53084e3514, type: 2}
   dialogText: ' This should make a hundred or so vials of Aether. '
-  dialogType: 1
+  dialogType: 2
   character_Position: 1
+  expressionSelections:
+  - expressionPartName: Mouth
+    spriteIndex: 3
+  - expressionPartName: Eyes
+    spriteIndex: 0
+  - expressionPartName: EyeBrows
+    spriteIndex: 1
+  - expressionPartName: Blush
+    spriteIndex: 0

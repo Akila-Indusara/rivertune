@@ -10,18 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfaf6f85e43d20f459469b9c186c9562, type: 3}
-  m_Name: 2
+  m_Name: 19
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 4aafa744ae0bf60428bbfc53084e3514, type: 2}
-  dialogText: 2 Kilos of Mana Absorption Agent
-  dialogType: 2
+  dialogText: "So long as it doesn\u2019t impede my work, you can do whatever you
+    please."
+  dialogType: 1
   character_Position: 1
-  expressionSelections:
-  - expressionPartName: Mouth
-    spriteIndex: 0
-  - expressionPartName: Eyes
-    spriteIndex: 0
-  - expressionPartName: EyeBrows
-    spriteIndex: 1
-  - expressionPartName: Blush
-    spriteIndex: 0

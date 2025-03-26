@@ -92,6 +92,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.data[4].gameObject
+      value: 
+      objectReference: {fileID: 5805728066304605670}
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.data[0].defaultSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 78ead887c87b6174c89e6cbd636bd330, type: 3}
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.data[1].defaultSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e791054fc4dfa64cb615f1a2b739095, type: 3}
+    - target: {fileID: -2692075434194878668, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
+      propertyPath: objectSpriteList.Array.data[2].defaultSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 44e01627c5e58834787daf3298534ea2, type: 3}
     - target: {fileID: 2183837667058937964, guid: f0e68f4f3f6667848b548184e3f4c326, type: 3}
       propertyPath: m_Name
       value: Cecily

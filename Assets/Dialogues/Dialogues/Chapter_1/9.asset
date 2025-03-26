@@ -17,3 +17,14 @@ MonoBehaviour:
     tonight."
   dialogType: 1
   character_Position: 0
+  expressionSelections:
+  - expressionPartName: Mouth
+    spriteIndex: 6
+  - expressionPartName: Eyes
+    spriteIndex: 1
+  - expressionPartName: EyeBrows
+    spriteIndex: 0
+  - expressionPartName: Blush
+    spriteIndex: 0
+  - expressionPartName: Tears
+    spriteIndex: 0

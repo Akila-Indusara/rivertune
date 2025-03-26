@@ -28,9 +28,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 7a59c89893f284d4f95f76f34d1cdd5d, type: 3}
   - name: Eyes
     sprites:
+    - {fileID: 21300000, guid: e1ae7ddabfa2130429ffb7a97e1f6421, type: 3}
     - {fileID: 21300000, guid: 677aa90b735749442b49d0721c15c519, type: 3}
     - {fileID: 21300000, guid: 2fb16a076634d2d41be75d4a3c1bd645, type: 3}
-    - {fileID: 21300000, guid: e1ae7ddabfa2130429ffb7a97e1f6421, type: 3}
     - {fileID: 21300000, guid: 9b5f394d0568bd24995eb23bead7220c, type: 3}
     - {fileID: 21300000, guid: 45d9b3cb5a65ef14abb28df97355cc5c, type: 3}
   - name: EyeBrows
