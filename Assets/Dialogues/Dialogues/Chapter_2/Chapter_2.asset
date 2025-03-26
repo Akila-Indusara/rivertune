@@ -16,5 +16,6 @@ MonoBehaviour:
   chapterDialogDataArr:
   - chapterDialogData:
     - {fileID: 11400000, guid: 9371d2e9216a12f448f6001bdbcb8e4f, type: 2}
+    - {fileID: 11400000, guid: 7eaf5eee382995d4baa27841892f2468, type: 2}
     dialogBackground: {fileID: 0}
   chapterMusic: {fileID: 0}

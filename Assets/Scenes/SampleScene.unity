@@ -1888,7 +1888,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2101969915}
         m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: toggleSkip
+        m_MethodName: ToggleSkip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1948,7 +1948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac4dd9439de5ae4bb980e06443ba40d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 2043030058}
   buttonImage: {fileID: 0}
   normalSprite: {fileID: 1241733398, guid: 57487cb26e7b1bf48aa0149dc81ab97f, type: 3}
   hoveredSprite: {fileID: 599796911, guid: dde1be59721c9dc4699e29ee404dd766, type: 3}

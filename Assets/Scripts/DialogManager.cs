@@ -87,6 +87,16 @@ public class DialogManager : MonoBehaviour
                 yield return StartCoroutine(StartDialog());
 
                 SetSkipFalse();
+
+                //remove all characters
+                if (character_left.transform.childCount > 0)
+                {
+                    Destroy(character_left.transform.GetChild(0).gameObject);
+                }
+                if (character_right.transform.childCount > 0)
+                {
+                    Destroy(character_right.transform.GetChild(0).gameObject);
+                }
                 if (i != chapterDialogDataArr.Length - 1)
                 {
                     isWaiting = true;
