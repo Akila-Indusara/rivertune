@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Button_Skip : MonoBehaviour
 {
-    public Button button;
     public Image buttonImage;
     public Sprite normalSprite;
     public Sprite hoveredSprite;
@@ -14,7 +13,7 @@ public class Button_Skip : MonoBehaviour
 
     void Start()
     {
-        buttonImage = button.GetComponent<Image>();
+        buttonImage = gameObject.GetComponent<Image>();
     }
 
     public void toggleState()
@@ -23,5 +22,11 @@ public class Button_Skip : MonoBehaviour
 
         // When toggled ON, use the hovered sprite
         buttonImage.sprite = isToggled ? hoveredSprite : normalSprite;
+    }
+
+    public void setIsToggledFalse()
+    {
+        isToggled = false;
+        buttonImage.sprite = normalSprite;
     }
 }

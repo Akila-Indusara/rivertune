@@ -29,7 +29,8 @@ public class DialogData : ScriptableObject
     public DialogType dialogType;
     public characterPosition character_Position;
 
-    [SerializeField, HideInInspector] private List<ExpressionSelection> expressionSelections = new List<ExpressionSelection>(); // List of chosen expressions
+    // List of chosen expressions
+    [SerializeField, HideInInspector] private List<ExpressionSelection> expressionSelections = new List<ExpressionSelection>(); 
 
     public List<ExpressionSelection> GetExpressionSelections()
     {

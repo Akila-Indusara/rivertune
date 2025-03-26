@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a2631ea95e8274d8c79d747984cdc0, type: 3}
+  m_Name: Chapter_1
+  m_EditorClassIdentifier: 
+  chapterName: 'Chapter 1: Aether'
+  chapterDialogDataArr:
+  - chapterDialogData:
+    - {fileID: 11400000, guid: 747a2adc3700a564a8f2f3e867616c92, type: 2}
+    - {fileID: 11400000, guid: 4f9d98070f3ac2e40845b0855959f899, type: 2}
+    - {fileID: 11400000, guid: d3361b36a35ae6b4ea10ab2f0d843741, type: 2}
+    dialogBackground: {fileID: 21300000, guid: 62034cf85a421bc49874375d392020e5, type: 3}
+  - chapterDialogData:
+    - {fileID: 11400000, guid: 5036da11ba55dbd4db78840a790638e4, type: 2}
+    - {fileID: 11400000, guid: f84ad481217027d42863efc81ea029a8, type: 2}
+    - {fileID: 11400000, guid: 857e3e063114277478651efd98e9fe09, type: 2}
+    - {fileID: 11400000, guid: 180d7fe3872fed84bb1132502be6b5b5, type: 2}
+    - {fileID: 11400000, guid: 3bf384e66810031478dcc492c3514ecf, type: 2}
+    - {fileID: 11400000, guid: 5b16ad54127a5e641a0d6c9558d58840, type: 2}
+    dialogBackground: {fileID: 21300000, guid: 7000d9ff8e7099a46830b29e9794fcb7, type: 3}
+  chapterMusic: {fileID: 8300000, guid: af6837670c3acda47a953c5b80d45630, type: 3}
