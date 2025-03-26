@@ -11,6 +11,7 @@ public class DialogManager : MonoBehaviour
     public GameObject character_left;
     public GameObject character_right;
     public DialogData [] dialogData;
+    public bool isSkipping = false;
 
     void Start()
     {
@@ -25,12 +26,28 @@ public class DialogManager : MonoBehaviour
         {
             DisplayDialog(dialogIndex);
 
-            // Wait until the player presses Space before continuing
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
-            yield return new WaitUntil(() => Input.GetKeyUp(KeyCode.Space));
+            if (!isSkipping)
+            {
+                yield return new WaitUntil(() => isSkipping || Input.GetKeyDown(KeyCode.Space));
+
+                // If skipping was enabled while waiting, exit waiting loop
+                if (!isSkipping)
+                {
+                    yield return new WaitUntil(() => Input.GetKeyUp(KeyCode.Space));
+                }
+            } else
+            {
+                yield return new WaitForSeconds(0.2f);
+            }
 
             dialogIndex++;
         }
+    }
+
+    public void toggleSkip()
+    {
+
+        isSkipping = !isSkipping;
     }
 
     private void DisplayDialog(int dialogIndex)

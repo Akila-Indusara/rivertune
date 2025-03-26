@@ -1327,7 +1327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -203.5, y: -90.20001}
+  m_AnchoredPosition: {x: -203.49997, y: -90.20001}
   m_SizeDelta: {x: -10, y: -287}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868290815
@@ -1380,6 +1380,7 @@ GameObject:
   - component: {fileID: 2043030060}
   - component: {fileID: 2043030059}
   - component: {fileID: 2043030058}
+  - component: {fileID: 2043030061}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1419,7 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1449,7 +1450,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043030059}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2101969915}
+        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
+        m_MethodName: toggleSkip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2043030061}
+        m_TargetAssemblyTypeName: Button_Skip, Assembly-CSharp
+        m_MethodName: toggleState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2043030059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1488,6 +1513,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043030056}
   m_CullTransparentMesh: 1
+--- !u!114 &2043030061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043030056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac4dd9439de5ae4bb980e06443ba40d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 2043030058}
+  buttonImage: {fileID: 0}
+  normalSprite: {fileID: 1241733398, guid: 57487cb26e7b1bf48aa0149dc81ab97f, type: 3}
+  hoveredSprite: {fileID: 599796911, guid: dde1be59721c9dc4699e29ee404dd766, type: 3}
 --- !u!1 &2101969913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1621,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58975b06e42a9764e9b59bed106c2fbe, type: 2}
   - {fileID: 11400000, guid: 17452288844ffe54dae2adad392a0364, type: 2}
   - {fileID: 11400000, guid: 9119ebc6a394e7d48bab9eba6fc72a7a, type: 2}
+  isSkipping: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
