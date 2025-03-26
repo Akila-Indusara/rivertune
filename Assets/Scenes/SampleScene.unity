@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1825607174}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.50512284
+  m_Size: 0.50339425
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1564,6 +1564,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 982f21bb318d50a4597e5fa9212bfbc6, type: 2}
   - {fileID: 11400000, guid: 1c90af78d5f2fa346825bfb3990fbaee, type: 2}
   - {fileID: 11400000, guid: 6339e0722dac698449b3ee4bf7b8861b, type: 2}
+  - {fileID: 11400000, guid: 398c945acafa9244898b4097830cfa04, type: 2}
+  - {fileID: 11400000, guid: 76dc166f02445364091a3f35af1d08cd, type: 2}
+  - {fileID: 11400000, guid: 6d927df5ba9b4b145bf1bd215cfe4fa3, type: 2}
+  - {fileID: 11400000, guid: 28e7fb66ac805414e9968fabcf4d045d, type: 2}
+  - {fileID: 11400000, guid: 213e21fddb0183e4c8ed406a125e3b41, type: 2}
+  - {fileID: 11400000, guid: 84f126d463040e743b4972e72d24990e, type: 2}
+  - {fileID: 11400000, guid: ec489de0308fb0b4e9c60532256c707a, type: 2}
+  - {fileID: 11400000, guid: 8ccef3f5466e0a3448d6d02cea159657, type: 2}
+  - {fileID: 11400000, guid: 4d50606c4c5a68348b0647c116b7a66a, type: 2}
+  - {fileID: 11400000, guid: 5fc32cfbe6bc7e24cbe40ba711128564, type: 2}
+  - {fileID: 11400000, guid: c0e6965668ba6314b8b3e9f1d748757e, type: 2}
+  - {fileID: 11400000, guid: dcd8936381dba9045bbbf432582c6bd1, type: 2}
+  - {fileID: 11400000, guid: 7db7d00a16b238c48a1b4d07a2388e3a, type: 2}
+  - {fileID: 11400000, guid: 58975b06e42a9764e9b59bed106c2fbe, type: 2}
+  - {fileID: 11400000, guid: 17452288844ffe54dae2adad392a0364, type: 2}
+  - {fileID: 11400000, guid: 9119ebc6a394e7d48bab9eba6fc72a7a, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

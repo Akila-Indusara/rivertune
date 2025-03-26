@@ -16,3 +16,12 @@ MonoBehaviour:
   dialogText: "I didn\u2019t know that Heliomancers came out at night."
   dialogType: 1
   character_Position: 1
+  expressionSelections:
+  - expressionPartName: Mouth
+    spriteIndex: 3
+  - expressionPartName: Eyes
+    spriteIndex: 0
+  - expressionPartName: EyeBrows
+    spriteIndex: 0
+  - expressionPartName: Blush
+    spriteIndex: 0

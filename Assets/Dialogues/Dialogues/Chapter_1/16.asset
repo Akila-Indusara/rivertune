@@ -16,3 +16,12 @@ MonoBehaviour:
   dialogText: Alden Moonstrider, Arch-Lunamancer of Lakeshore Town.
   dialogType: 1
   character_Position: 1
+  expressionSelections:
+  - expressionPartName: Mouth
+    spriteIndex: 2
+  - expressionPartName: Eyes
+    spriteIndex: 1
+  - expressionPartName: EyeBrows
+    spriteIndex: 1
+  - expressionPartName: Blush
+    spriteIndex: 0

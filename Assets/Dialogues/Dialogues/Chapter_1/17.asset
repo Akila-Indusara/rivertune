@@ -16,3 +16,14 @@ MonoBehaviour:
   dialogText: Cecily Solaris, Apprentice Heliomancer at the Mirfield School of Heliomancy.
   dialogType: 1
   character_Position: 0
+  expressionSelections:
+  - expressionPartName: Mouth
+    spriteIndex: 2
+  - expressionPartName: Eyes
+    spriteIndex: 1
+  - expressionPartName: EyeBrows
+    spriteIndex: 0
+  - expressionPartName: Blush
+    spriteIndex: 0
+  - expressionPartName: Tears
+    spriteIndex: 0
