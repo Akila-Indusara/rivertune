@@ -15,10 +15,10 @@ MonoBehaviour:
   chapterName: 'Chapter 2: Can you see me?'
   chapterDialogDataArr:
   - chapterDialogData:
-    - {fileID: 11400000, guid: 533eb2bf89c88f94d8599423b1e0039c, type: 2}
-    - {fileID: 11400000, guid: 9143671af9564494fa1dffd6c00e7bea, type: 2}
-    - {fileID: 11400000, guid: 70bbeeebb5b55dc42bf5bba456be885b, type: 2}
-    - {fileID: 11400000, guid: 4dc21921f090e1f488eea4fdff76d62f, type: 2}
+    - {fileID: 11400000, guid: aedf6ac1a57aba8459d0a36ddf28441e, type: 2}
+    - {fileID: 11400000, guid: dd79a04006351ea4a96d762bd44aaaf1, type: 2}
+    - {fileID: 11400000, guid: 5846256fcdeee4d40be21691c5a62657, type: 2}
+    - {fileID: 11400000, guid: 760ae3d6182bc094b99536f59dd3d506, type: 2}
     - {fileID: 11400000, guid: f9af0c0d8b3e9684d9aa898776250a71, type: 2}
     - {fileID: 11400000, guid: 87db7fa1c3c28534a9fe5ad7ed5a9fdf, type: 2}
     - {fileID: 11400000, guid: 8d8e90f8fc94c2b4d9ef5579e1d0e8f6, type: 2}
@@ -50,9 +50,77 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 010bd01b6ecd2494ab8b53967df518a5, type: 2}
     - {fileID: 11400000, guid: 086a9edef60ed6247b758c16d2dc72f6, type: 2}
     - {fileID: 11400000, guid: a4e052da9fb2e8141b3e4ad56707e896, type: 2}
+    - {fileID: 11400000, guid: c8a65ee55871d534a986d095ea75674f, type: 2}
+    - {fileID: 11400000, guid: dbefd3dcf9cb5db449786227ab019dcd, type: 2}
+    - {fileID: 11400000, guid: 099b379e926981444a285c53b29ecec2, type: 2}
+    - {fileID: 11400000, guid: 8064d2a658e72614f8f1850d6494deee, type: 2}
+    - {fileID: 11400000, guid: 2b53553788d6b5b43853ff974d6018c5, type: 2}
+    - {fileID: 11400000, guid: 085f01d2470ee9a4caba9061253d01c5, type: 2}
+    - {fileID: 11400000, guid: 083ff0d002541bd42b8e52d06d449aa0, type: 2}
+    - {fileID: 11400000, guid: 356d0d822613ff44cb62b01ba57b323c, type: 2}
+    - {fileID: 11400000, guid: 14dda1f553f5c9545b1bd1c3b5e18e23, type: 2}
+    - {fileID: 11400000, guid: 3f4a77421ab69764792071f78817ac39, type: 2}
+    - {fileID: 11400000, guid: cd6ad12ec98f743409da054dda27ca27, type: 2}
+    - {fileID: 11400000, guid: d3b01cc8a1e543f45b50806385aada99, type: 2}
+    - {fileID: 11400000, guid: 119c9c539af977c48be730519857f5c0, type: 2}
+    - {fileID: 11400000, guid: b7941b76adbc12b46b430dcfeede4266, type: 2}
+    - {fileID: 11400000, guid: eb7ca1d50b7dbe7409e0e9dcda7fad49, type: 2}
+    - {fileID: 11400000, guid: d18874f2246902c4f948dc7d9f8b4f3b, type: 2}
+    - {fileID: 11400000, guid: 25731b884af532441b09dedef4cacbb7, type: 2}
+    - {fileID: 11400000, guid: 7b37d61fa2f2142428b9a944fcf98588, type: 2}
+    - {fileID: 11400000, guid: 07fcfbce14261224992762e54f75ba31, type: 2}
+    - {fileID: 11400000, guid: e92ed4185988c5348a4f1fbfa0106299, type: 2}
+    - {fileID: 11400000, guid: 81e71a5fd35167b4fb69a91ff3735adc, type: 2}
+    - {fileID: 11400000, guid: eb9d678290359bf4b9aa308db95d630f, type: 2}
+    - {fileID: 11400000, guid: 9d3e571962f9a71459eef0f645cf9f1e, type: 2}
+    - {fileID: 11400000, guid: c2ffdbee2b167854ca3986a98f2cee1c, type: 2}
+    - {fileID: 11400000, guid: 2fde4073fb15e3c409de17fb1bf07364, type: 2}
+    - {fileID: 11400000, guid: 7d7f5454ccf97bc46824e34aa229fdb2, type: 2}
+    - {fileID: 11400000, guid: 5fffca5ac6d4492469330f147e4574b4, type: 2}
+    - {fileID: 11400000, guid: 02029175aef7fad489bee324aa865391, type: 2}
+    - {fileID: 11400000, guid: a6d7795739ce3264c854ba4c2b9d8316, type: 2}
+    - {fileID: 11400000, guid: 386d567d0789a1144be6c023de424a10, type: 2}
+    - {fileID: 11400000, guid: 4aac337b27e698b45886d88198dbe97c, type: 2}
+    - {fileID: 11400000, guid: 920cb875e4739da489865261346ffe65, type: 2}
+    - {fileID: 11400000, guid: 92ac700c60b1c144693e9475c20b6fcc, type: 2}
     - {fileID: 11400000, guid: 533eb2bf89c88f94d8599423b1e0039c, type: 2}
     - {fileID: 11400000, guid: 9143671af9564494fa1dffd6c00e7bea, type: 2}
     - {fileID: 11400000, guid: 70bbeeebb5b55dc42bf5bba456be885b, type: 2}
     - {fileID: 11400000, guid: 4dc21921f090e1f488eea4fdff76d62f, type: 2}
+    - {fileID: 11400000, guid: 2aa2c7c31b218154880770441d5532fb, type: 2}
+    - {fileID: 11400000, guid: d5000ac19848787498eadd5fb7b1b503, type: 2}
+    - {fileID: 11400000, guid: caa777297cac4a249b8dae9ceb0eb1f6, type: 2}
+    - {fileID: 11400000, guid: e7c0bd419afc92547a2ed8412dfd2502, type: 2}
     dialogBackground: {fileID: 21300000, guid: 99e5ba527c3bcdf4aaba701c6f401e4c, type: 3}
+  - chapterDialogData:
+    - {fileID: 11400000, guid: f1b62a0b741b40146836a0457d778100, type: 2}
+    - {fileID: 11400000, guid: 0a6895d258ce16644b0c920e6675c742, type: 2}
+    - {fileID: 11400000, guid: 0c50fbfc5d89c084f8377e7f43f695b3, type: 2}
+    - {fileID: 11400000, guid: ddc0e09998cb14e418e2f3002eaab3c4, type: 2}
+    - {fileID: 11400000, guid: f43917ad8f04c6e40822602c895e01a6, type: 2}
+    - {fileID: 11400000, guid: f5d32554942fb0940ba72d5caf69bb53, type: 2}
+    - {fileID: 11400000, guid: 162df15e8e367bb459deae495af079ae, type: 2}
+    - {fileID: 11400000, guid: 154c40c2e9fc3f54c811c411dd06d7f4, type: 2}
+    - {fileID: 11400000, guid: 7f8de6503cda4684490b3661754042c9, type: 2}
+    - {fileID: 11400000, guid: affb78a39293f5f4b95565247d21dea0, type: 2}
+    - {fileID: 11400000, guid: 768e9ddebea3a4941a87987a2848ccc9, type: 2}
+    - {fileID: 11400000, guid: c8b2c84d8858cf140a30f2f98736020a, type: 2}
+    - {fileID: 11400000, guid: a831ceeb0568cd749b361c55acb97e9a, type: 2}
+    - {fileID: 11400000, guid: 2e4f189eab32e0d4ea5c8d15bba6c801, type: 2}
+    - {fileID: 11400000, guid: 1fcfed26200bc9f4fa45f34e0f0e360f, type: 2}
+    - {fileID: 11400000, guid: 58db9cc4e9a5b054d8caa6bbe4637590, type: 2}
+    - {fileID: 11400000, guid: 6fbdad87d87d41642974d18a8eaf2b29, type: 2}
+    - {fileID: 11400000, guid: 537ee5f4f7dc5b646a550b3ceb182158, type: 2}
+    - {fileID: 11400000, guid: 4123b0eff543af744b67d6620371c6a1, type: 2}
+    - {fileID: 11400000, guid: 9d990a68241988148aaa0f5d6c2261a2, type: 2}
+    - {fileID: 11400000, guid: ff3815e96d4110b47884f1c5f962766e, type: 2}
+    - {fileID: 11400000, guid: cba79c81de270c042a93e91b4831d98a, type: 2}
+    - {fileID: 11400000, guid: b08617d803859fe40a2547c2df781bc7, type: 2}
+    - {fileID: 11400000, guid: 934a16b6125aa7d499fc94dd05f65ab0, type: 2}
+    - {fileID: 11400000, guid: a1aaa668d305e234492896db262508fc, type: 2}
+    - {fileID: 11400000, guid: 49949db28d8c4f2458540ab87a0f6ba5, type: 2}
+    - {fileID: 11400000, guid: 3de783c098244574fb1b7d110c4c87ae, type: 2}
+    - {fileID: 11400000, guid: ecae8c359953e504f895af9535efcf0b, type: 2}
+    - {fileID: 11400000, guid: b7081ec6043c00b4894bbf8cc97ea617, type: 2}
+    dialogBackground: {fileID: 21300000, guid: 7000d9ff8e7099a46830b29e9794fcb7, type: 3}
   chapterMusic: {fileID: 8300000, guid: 2de1b308557a215409112978c5511812, type: 3}

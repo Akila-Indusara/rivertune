@@ -10,21 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfaf6f85e43d20f459469b9c186c9562, type: 3}
-  m_Name: 72
+  m_Name: 29
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: ea741f8cd9eb0d345bbd85527a06fb01, type: 2}
-  dialogText: "Thank you Claudia. I shall meet father once we\u2019re through with
-    tea. "
+  dialogText: 'Please elaborate. '
   dialogType: 1
-  character_Position: 2
-  isCharacterFlipped: 1
+  character_Position: 0
+  isCharacterFlipped: 0
   expressionSelections:
   - expressionPartName: Mouth
     spriteIndex: 2
   - expressionPartName: Eyes
     spriteIndex: 1
   - expressionPartName: EyeBrows
-    spriteIndex: 0
+    spriteIndex: 1
   - expressionPartName: Blush
     spriteIndex: 0
   - expressionPartName: Tears
