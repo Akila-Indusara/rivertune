@@ -15,7 +15,8 @@ public class DialogData : ScriptableObject
     public enum characterPosition
     {
         Left,
-        Right
+        Right,
+        Right_2
     }
     [System.Serializable]
     public class ExpressionSelection
@@ -28,6 +29,7 @@ public class DialogData : ScriptableObject
     public string dialogText;
     public DialogType dialogType;
     public characterPosition character_Position;
+    public bool isCharacterFlipped;
 
     // List of chosen expressions
     [SerializeField, HideInInspector] private List<ExpressionSelection> expressionSelections = new List<ExpressionSelection>(); 

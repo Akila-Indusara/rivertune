@@ -12,16 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfaf6f85e43d20f459469b9c186c9562, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 4aafa744ae0bf60428bbfc53084e3514, type: 2}
-  dialogText: fffffffff
-  dialogType: 2
+  characterData: {fileID: 11400000, guid: 6d27f716d85bc4c4e9aa71ae6004dd6e, type: 2}
+  dialogText: 'You wake up hearing the sound of birds chirping. '
+  dialogType: 0
   character_Position: 1
-  expressionSelections:
-  - expressionPartName: Mouth
-    spriteIndex: 0
-  - expressionPartName: Eyes
-    spriteIndex: 0
-  - expressionPartName: EyeBrows
-    spriteIndex: 1
-  - expressionPartName: Blush
-    spriteIndex: 0
+  expressionSelections: []

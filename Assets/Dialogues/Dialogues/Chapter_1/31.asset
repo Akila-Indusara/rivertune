@@ -18,7 +18,7 @@ MonoBehaviour:
   character_Position: 0
   expressionSelections:
   - expressionPartName: Mouth
-    spriteIndex: 4
+    spriteIndex: 3
   - expressionPartName: Eyes
     spriteIndex: 1
   - expressionPartName: EyeBrows

@@ -11,6 +11,7 @@ public class DialogManager : MonoBehaviour
     public GameObject textBox;
     public GameObject character_left;
     public GameObject character_right;
+    public GameObject character_right_2;
     public GameObject button_Skip;
     public GameObject Background;
     public GameObject Music;
@@ -160,18 +161,29 @@ public class DialogManager : MonoBehaviour
         {
 
             SetColor(character_left, grayColor);
-            setDefaultEmotion(character_left);
-            SetColor(character_right, grayColor);
-            setDefaultEmotion(character_right);
+            DecreaseDrawOrder(1, character_left);
+            SetDefaultEmotion(character_left);
 
-        } else
+            SetColor(character_right, grayColor);
+            DecreaseDrawOrder(1, character_right);
+            SetDefaultEmotion(character_right);
+
+        }
+        else
         {
             // left character
             if (dialog.character_Position == DialogData.characterPosition.Left)
             {
                 SetColor(character_right, grayColor);
-                setDefaultEmotion(character_right);
-                setCharacter(dialog, character_left);
+                SetColor(character_right_2, grayColor);
+
+                DecreaseDrawOrder(1, character_right);
+                DecreaseDrawOrder(1, character_right_2);
+
+                SetDefaultEmotion(character_right);
+                SetDefaultEmotion(character_right_2);
+
+                SetCharacterExpression(dialog, character_left);
 
             }
 
@@ -179,14 +191,34 @@ public class DialogManager : MonoBehaviour
             else if (dialog.character_Position == DialogData.characterPosition.Right)
             {
                 SetColor(character_left, grayColor);
-                setDefaultEmotion(character_left);
-                setCharacter(dialog, character_right);
+                SetColor(character_right_2, grayColor);
 
+                DecreaseDrawOrder(1, character_left);
+                DecreaseDrawOrder(1, character_right_2);
+
+                SetDefaultEmotion(character_left);
+                SetDefaultEmotion(character_right_2);
+
+                SetCharacterExpression(dialog, character_right);
+
+            }
+            else if (dialog.character_Position == DialogData.characterPosition.Right_2)
+            {
+                SetColor(character_left, grayColor);
+                SetColor(character_right, grayColor);
+
+                DecreaseDrawOrder(1, character_left);
+                DecreaseDrawOrder(1, character_right);
+
+                SetDefaultEmotion(character_left);
+                SetDefaultEmotion(character_right);
+
+                SetCharacterExpression(dialog, character_right_2);
             }
         }
 
-        // Set the dialog text
-        textBox.GetComponent<TextMeshProUGUI>().text = dialog.dialogText;
+            // Set the dialog text
+            textBox.GetComponent<TextMeshProUGUI>().text = dialog.dialogText;
         if (dialog.dialogType == DialogData.DialogType.Talk)
         {
             textBox.GetComponent<TextMeshProUGUI>().fontStyle = FontStyles.Normal;
@@ -206,48 +238,114 @@ public class DialogManager : MonoBehaviour
 
     }
 
-    private void SetColor(GameObject character, Color color)
+    private void IncreseDrawOrder(int increseBy, GameObject character)
     {
-        if (character.transform.childCount > 0)
+        if (character != null)
         {
-            Transform characterChild = character.transform.GetChild(0);
-            SpriteRenderer spriteRenderer = characterChild.GetComponent<SpriteRenderer>();
-            if (spriteRenderer != null)
+            if (character.transform.childCount > 0)
             {
-                spriteRenderer.color = color;
-            }
-            foreach (Transform child in characterChild)
-            {
-                SpriteRenderer spriteRendererChild = child.GetComponent<SpriteRenderer>();
-
-                if (spriteRendererChild != null)
+                Transform characterChild = character.transform.GetChild(0);
+                SpriteRenderer spriteRenderer = characterChild.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
                 {
-                    spriteRendererChild.color = color;
+                    spriteRenderer.sortingOrder += increseBy;
+                }
+                foreach (Transform child in characterChild)
+                {
+                    SpriteRenderer spriteRendererChild = child.GetComponent<SpriteRenderer>();
+                    if (spriteRendererChild != null)
+                    {
+                        spriteRendererChild.sortingOrder += increseBy;
+                    }
                 }
             }
         }
     }
 
-    private void setDefaultEmotion(GameObject character)
+    private void DecreaseDrawOrder(int decreaseBy, GameObject character)
     {
-        if (character.transform.childCount > 0)
+        if (character != null)
         {
-            Transform characterChild = character.transform.GetChild(0);
-            foreach (Transform child in characterChild)
+            if (character.transform.childCount > 0)
             {
-                characterChild.GetComponent<CharacterScript>().setDefaultEmotions();
+                Transform characterChild = character.transform.GetChild(0);
+                SpriteRenderer spriteRenderer = characterChild.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.sortingOrder -= decreaseBy;
+                }
+                foreach (Transform child in characterChild)
+                {
+                    SpriteRenderer spriteRendererChild = child.GetComponent<SpriteRenderer>();
+                    if (spriteRendererChild != null)
+                    {
+                        spriteRendererChild.sortingOrder -= decreaseBy;
+                    }
+                }
             }
         }
     }
 
-    private void setCharacter(DialogData dialog, GameObject character)
+    private void SetColor(GameObject character, Color color)
+    {
+        if (character != null)
+        {
+            if (character.transform.childCount > 0)
+            {
+                Transform characterChild = character.transform.GetChild(0);
+                SpriteRenderer spriteRenderer = characterChild.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.color = color;
+                }
+                foreach (Transform child in characterChild)
+                {
+                    SpriteRenderer spriteRendererChild = child.GetComponent<SpriteRenderer>();
+
+                    if (spriteRendererChild != null)
+                    {
+                        spriteRendererChild.color = color;
+                    }
+                }
+            }
+        }
+    }
+
+    private void SetDefaultEmotion(GameObject character)
+    {
+        if (character != null)
+        {
+            if (character.transform.childCount > 0)
+            {
+                Transform characterChild = character.transform.GetChild(0);
+                foreach (Transform child in characterChild)
+                {
+                    characterChild.GetComponent<CharacterScript>().setDefaultEmotions();
+                }
+            }
+        }
+    }
+
+    // Set the character's expression
+    private void SetCharacterExpression(DialogData dialog, GameObject character)
     {
         if (!(character.transform.childCount > 0 && character.transform.GetChild(0).name.Replace("(Clone)", "") == dialog.characterData.character.name))
         {
+            if (character.transform.childCount > 0) Destroy(character.transform.GetChild(0).gameObject);
             Instantiate(dialog.characterData.character, character.transform);
         }
         // set color to white
         SetColor(character, Color.white);
+        IncreseDrawOrder(1, character);
+
+        if (dialog.isCharacterFlipped)
+        {
+            character.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            character.transform.localScale = new Vector3(1, 1, 1);
+        }
 
         // Set the character's expression
         for (int i = 0; i < dialog.GetExpressionSelections().Count; i++)
